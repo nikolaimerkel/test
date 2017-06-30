@@ -1,5 +1,5 @@
 FROM centos:centos7
-USER 42
+USER root
 RUN mkdir /mydata
 RUN whoami
 RUN ls -l /mydata
