@@ -1,5 +1,5 @@
 FROM centos:centos7
-
+USER 42
 RUN mkdir /mydata
 RUN whoami
 RUN ls -l /mydata
@@ -13,6 +13,6 @@ RUN chgrp 42 /run.sh \
   && chown 42 /run.sh \
   && chmod g+rwx /run.sh
 
-USER 42
+
 RUN whoami
 CMD ["/run.sh"]
