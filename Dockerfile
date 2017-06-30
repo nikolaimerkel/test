@@ -14,5 +14,5 @@ RUN chgrp 42 /run.sh \
   && chmod g+rwx /run.sh
 
 USER 42
-
+RUN whoami
 CMD ["/run.sh"]
